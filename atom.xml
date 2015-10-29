@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://xiaoleeza.github.io/"/>
-  <updated>2015-10-27T03:34:11.000Z</updated>
+  <updated>2015-10-29T11:06:14.000Z</updated>
   <id>http://xiaoleeza.github.io/</id>
   
   <author>
@@ -13,6 +13,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[信号与系统常用公式]]></title>
+    <link href="http://xiaoleeza.github.io/2015/10/29/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F/"/>
+    <id>http://xiaoleeza.github.io/2015/10/29/信号与系统常用公式/</id>
+    <published>2015-10-29T10:26:08.000Z</published>
+    <updated>2015-10-29T11:06:14.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>记录一些常考易忘的公式，以及一些心得。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="冲激函数">冲激函数</h2><span>$$\begin{align}
+&amp;f(t)\delta&apos;(t) = f(0)\delta&apos;(t)-f&apos;(0)\delta(t) \\
+&amp;\int^{+\infty}_{-\infty}f(t) \,\mathrm{d}t = -f&apos;(0) \\
+&amp;\int^{+\infty}_{-\infty}\delta(t-t_1)\phi(t) \,\mathrm{d}t = \phi(t_1) \\
+&amp;\int^{+\infty}_{-\infty}\delta&apos;(t-t_1)\phi(t) \,\mathrm{d}t = -\phi&apos;(t_1)
+&amp;\end{align}$$</span><!-- Has MathJax -->
+<h3 id="复合函数形式的冲激函数">复合函数形式的冲激函数</h3><span>$$\begin{align}
+\delta\bigr[f(t)\bigr] &amp;= \delta\bigr[f&apos;(t_i)(t-t_i)\bigr]  \\
+&amp;= \frac{1}{\bigr|f&apos;(t_i)\bigr|}\delta(t-t_i) \\
+\end{align}$$</span><!-- Has MathJax -->
+<blockquote>
+<p>注：<span>$f(t)=0$</span><!-- Has MathJax --> 的 $n$ 个根必须为单根，即 <span>$f&apos;(t_i)\neq0$</span><!-- Has MathJax --></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>记录一些常考易忘的公式，以及一些心得。</p>
+</blockquote>]]>
+    
+    </summary>
+    
+      <category term="equation" scheme="http://xiaoleeza.github.io/tags/equation/"/>
+    
+      <category term="mathjax" scheme="http://xiaoleeza.github.io/tags/mathjax/"/>
+    
+      <category term="signal" scheme="http://xiaoleeza.github.io/tags/signal/"/>
+    
+      <category term="随笔" scheme="http://xiaoleeza.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[SublimeText 3 中文输入问题]]></title>
