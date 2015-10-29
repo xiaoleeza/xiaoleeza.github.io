@@ -45,7 +45,7 @@ function ua(e) {
     var outputer = '';
     if (r = e.match(/FireFox\/([^\s]+)/ig)) {
         var r1 = r[0].split("/");
-        outputer = '<span class="ua_firefox"><i class="fa fa-globe"></i> Mozilla FireFox' + ' ' + r1[1]
+        outputer = '<span class="ua_firefox"><i class="fa fa-firefox"></i> Mozilla FireFox' + ' ' + r1[1]
     } else if (r = e.match(/Maxthon([\d]*)\/([^\s]+)/ig)) {
         var r1 = r[0].split("/");
         outputer = '<span class="ua_maxthon"><i class="fa fa-globe"></i> Maxthon' + ' ' + r1[1]
@@ -63,12 +63,12 @@ function ua(e) {
     } else if (r = e.match(/2345Explorer/ig)) {
         outputer = '<span class="ua_2345explorer"><i class="fa fa-globe"></i> 2345王牌浏览器'
     } else if (r = e.match(/2345chrome/ig)) {
-        outputer = '<span class="ua_2345chrome"><i class="fa fa-globe"></i> 2345加速浏览器'
+        outputer = '<span class="ua_2345chrome"><i class="fa fa-chrome"></i> 2345加速浏览器'
     } else if (r = e.match(/LBBROWSER/ig)) {
         outputer = '<span class="ua_lbbrowser"><i class="fa fa-globe"></i> 猎豹安全浏览器'
     } else if (r = e.match(/MicroMessenger\/([^\s]+)/ig)) {
         var r1 = r[0].split("/");
-        outputer = '<span class="ua_qq"><i class="fa fa-weixin"></i> 微信' + ' ' + r1[1]
+        outputer = '<span class="ua_qq"><i class="fa fa-qq"></i> QQ' + ' ' + r1[1]
         /*.split('/')[0]*/
     } else if (r = e.match(/QQBrowser\/([^\s]+)/ig)) {
         var r1 = r[0].split("/");
@@ -84,18 +84,18 @@ function ua(e) {
         /*.split('/')[0]*/
     } else if (r = e.match(/Chrome([\d]*)\/([^\s]+)/ig)) {
         var r1 = r[0].split("/");
-        outputer = '<span class="ua_chrome"><i class="fa fa-globe"></i> Chrome' + ' ' + r1[1]
+        outputer = '<span class="ua_chrome"><i class="fa fa-chrome"></i> Chrome' + ' ' + r1[1]
         /*.split('.')[0]*/
     } else if (r = e.match(/safari\/([^\s]+)/ig)) {
         var r1 = r[0].split("/");
-        outputer = '<span class="ua_apple"><i class="fa fa-globe"></i> Apple Safari' + ' ' + r1[1]
+        outputer = '<span class="ua_apple"><i class="fa fa-safari"></i> Apple Safari' + ' ' + r1[1]
     } else if (r = e.match(/Opera[\s|\/]([^\s]+)/ig)) {
         var r1 = r[0].split("/");
-        outputer = '<span class="ua_opera"><i class="fa fa-globe"></i> Opera' + ' ' + r1[1]
+        outputer = '<span class="ua_opera"><i class="fa fa-opera"></i> Opera' + ' ' + r1[1]
     } else if (r = e.match(/Trident\/7.0/gi)) {
-        outputer = '<span class="ua_ie"><i class="fa fa-globe"></i> Internet Explorer 11'
+        outputer = '<span class="ua_ie"><i class="fa fa-internet-explorer"></i> Internet Explorer 11'
     } else if (r = e.match(/MSIE\s([^\s|;]+)/gi)) {
-        outputer = '<span class="ua_ie"><i class="fa fa-globe"></i> Internet Explorer' + ' ' + r[0]
+        outputer = '<span class="ua_ie"><i class="fa fa-internet-explorer"></i> Internet Explorer' + ' ' + r[0]
         /*.replace('MSIE', '').split('.')[0]*/
     } else {
         outputer = '<span class="ua_other"><i class="fa fa-globe"></i> 其它浏览器'
@@ -111,21 +111,21 @@ function os(e) {
     var os = '';
     if (e.match(/win/ig)) {
         if (e.match(/nt 5.1/ig)) {
-            os = '<span class="os_xp"><i class="fa fa-desktop"></i> Windows XP'
+            os = '<span class="os_xp"><i class="fa fa-windows"></i> Windows XP'
         } else if (e.match(/nt 6.1/ig)) {
-            os = '<span class="os_7"><i class="fa fa-desktop"></i> Windows 7'
+            os = '<span class="os_7"><i class="fa fa-windows"></i> Windows 7'
         } else if (e.match(/nt 6.2/ig)) {
-            os = '<span class="os_8"><i class="fa fa-desktop"></i> Windows 8'
+            os = '<span class="os_8"><i class="fa fa-windows"></i> Windows 8'
         } else if (e.match(/nt 6.3/ig)) {
-            os = '<span class="os_8_1"><i class="fa fa-desktop"></i> Windows 8.1'
+            os = '<span class="os_8_1"><i class="fa fa-windows"></i> Windows 8.1'
         } else if (e.match(/nt 10.0/ig)) {
-            os = '<span class="os_8_1"><i class="fa fa-desktop"></i> Windows 10'
+            os = '<span class="os_8_1"><i class="fa fa-windows"></i> Windows 10'
         } else if (e.match(/nt 6.0/ig)) {
-            os = '<span class="os_vista"><i class="fa fa-desktop"></i> Windows Vista'
+            os = '<span class="os_vista"><i class="fa fa-windows"></i> Windows Vista'
         } else if (e.match(/nt 5/ig)) {
-            os = '<span class="os_2000"><i class="fa fa-desktop"></i> Windows 2000'
+            os = '<span class="os_2000"><i class="fa fa-windows"></i> Windows 2000'
         } else {
-            os = '<span class="os_windows"><i class="fa fa-desktop"></i> Windows'
+            os = '<span class="os_windows"><i class="fa fa-windows"></i> Windows'
         }
     } else if (e.match(/android/ig)) {
         os = '<span class="os_android"><i class="fa fa-android"></i> Android'
