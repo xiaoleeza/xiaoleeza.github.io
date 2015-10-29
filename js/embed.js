@@ -130,11 +130,11 @@ function os(e) {
     } else if (e.match(/android/ig)) {
         os = '<span class="os_android"><i class="fa fa-android"></i> Android'
     } else if (e.match(/ubuntu/ig)) {
-        os = '<span class="os_ubuntu"><i class="fa fa-desktop"></i>  Ubuntu'
+        os = '<span class="os_ubuntu"><i class="fa fa-linux"></i>  Ubuntu'
     } else if (e.match(/linux/ig)) {
         os = '<span class="os_linux"><i class="fa fa-linux"></i> Linux'
     } else if (e.match(/mac/ig)) {
-        os = '<span class="os_mac"><i class="fa fa-desktop"></i> Mac OS X'
+        os = '<span class="os_mac"><i class="fa fa-apple"></i> Mac OS X'
     } else if (e.match(/unix/ig)) {
         os = '<span class="os_unix"><i class="fa fa-desktop"></i> Unix'
     } else if (e.match(/symbian/ig)) {
