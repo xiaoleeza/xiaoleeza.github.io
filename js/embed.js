@@ -130,7 +130,7 @@ function os(e) {
     } else if (e.match(/android/ig)) {
         os = '<span class="os_android"><i class="fa fa-android"></i> Android'
     } else if (e.match(/ubuntu/ig)) {
-        os = '<span class="os_ubuntu"><p><i class="fa icon-camera-retro"></i> Ubuntu'
+        os = '<span class="os_ubuntu"><i class="fa fa-desktop"></i>  Ubuntu'
     } else if (e.match(/linux/ig)) {
         os = '<span class="os_linux"><i class="fa fa-linux"></i> Linux'
     } else if (e.match(/mac/ig)) {
