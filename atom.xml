@@ -231,7 +231,7 @@
     <link href="http://xiaoleeza.github.io/2015/10/27/mathjax-%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98/"/>
     <id>http://xiaoleeza.github.io/2015/10/27/mathjax-加载问题/</id>
     <published>2015-10-27T01:08:35.000Z</published>
-    <updated>2015-10-27T03:17:27.000Z</updated>
+    <updated>2015-10-30T15:41:12.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p><a href="https://www.mathjax.org/" target="_blank" rel="external">Mathjax</a> 是一款运行在浏览器中的开源的数学符号渲染引擎，使用MathJax可以方便的在浏览器中显示数学公式，不需要使用图片 。然而，加载 Mathjax 的数学公式时是相当消耗资源和时间的。即使在网页中并没有生成公式时，也会加载最基本的<code>Mathjax.js</code>。因此应该考虑在使用公式的页面才加载 Mathjax ，这样就需要一个控制。在此主题的根目录<code>_config.yml</code>里面加入<code>mathjax: true</code>，接下来在<code>after_footer.ejs</code>里修改</p>
 </blockquote>
