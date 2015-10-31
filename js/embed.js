@@ -3,7 +3,7 @@ function sskadmin(e) {
     var ssk = '';
     if (e.user_id == 10813740) {
         if (checkMobile()) {
-            ssk = '<span class="ua"><span class="sskadmin">站长</span></span><br><br>';
+            ssk = '<span class="ua"><span class="">站长</span></span><br><br>';
         } else {
             ssk = '<span class="ua"><span class="sskadmin">站长</span></span>';
         }
