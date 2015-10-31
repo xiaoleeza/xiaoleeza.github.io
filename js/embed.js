@@ -1,14 +1,20 @@
 //HelloDog -  http://wsgzao.github.io/post/duoshuo/
-
-//管理员判断开始
 function sskadmin(e) {
     var ssk = '';
-    if(e.user_id == 10813740){
-        ssk = '<div style="position: absolute;margin-left:300px;"><img src="http://7xnsi8.com1.z0.glb.clouddn.com/sskdsadmin.png" width="30px" height="20px"></div>'
+    if (e.user_id == 10813740) {
+        if (checkMobile()) {
+            ssk = '<span class="ua"><span class="sskadmin">站长</span></span><br><br>';
+        } else {
+            ssk = '<span class="ua"><span class="sskadmin">站长</span></span>';
+        }
+    } else {
+        if (checkMobile()) {
+            ssk = '<br><br>';
+        }
     }
     return ssk;
 }
-//管理员判断结束
+
 //移动客户端判断开始
 function checkMobile() {
     var isiPad = navigator.userAgent.match(/iPad/i) != null;

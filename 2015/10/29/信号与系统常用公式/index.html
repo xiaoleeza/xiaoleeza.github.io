@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://xiaoleeza.github.io/2015/10/29/信号与系统常用公式/index.html">
 <meta property="og:site_name" content="XeLaTeX">
 <meta property="og:description" content="记录一些常考易忘的公式，以及一些心得。">
-<meta property="og:updated_time" content="2015-10-29T11:06:14.000Z">
+<meta property="og:updated_time" content="2015-10-31T15:40:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="信号与系统常用公式">
 <meta name="twitter:description" content="记录一些常考易忘的公式，以及一些心得。">
@@ -257,8 +257,13 @@
 &amp;= \frac{1}{\bigr|f&apos;(t_i)\bigr|}\delta(t-t_i) \\
 \end{align}$$</span><!-- Has MathJax -->
 <blockquote>
-<p>注：<span>$f(t)=0$</span><!-- Has MathJax --> 的 $n$ 个根必须为单根，即 <span>$f&apos;(t_i)\neq0$</span><!-- Has MathJax --></p>
+<p>注：<span>$f(t)=0$</span><!-- Has MathJax --> 的 $n$ 个根必须为单根，即 <span>$f&apos;(t_i)\neq0$</span><!-- Has MathJax --> 借助 DTFT 求频响中的技巧</p>
 </blockquote>
+<span>$$\begin{align}
+\bigl|H(\mathrm{e}^{j\theta})\bigr| &amp;= \sqrt{\frac{(\cos\theta+1)^2+\sin^2\theta}{(\cos\theta-1/2)^2+\sin^2\theta}}= \sqrt{\frac{2(\cos\theta+1)}{5/4-\cos\theta}} = \sqrt{\frac{16\cos^2\frac{\theta}{2}}{1+8\sin^2\frac{\theta}{2}}} \\
+&amp;= \sqrt{\frac{16\cos^2\frac{\theta}{2}}{\sin^2\frac{\theta}{2}+\cos^2\frac{\theta}{2}+8\sin^2\frac{\theta}{2}}} = \frac{4}{\sqrt{1+9\tan
+^2\frac{\theta}{2}}}
+\end{align}$$</span><!-- Has MathJax -->
 
       
     </div>
