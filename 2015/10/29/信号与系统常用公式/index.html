@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://xiaoleeza.github.io/2015/10/29/信号与系统常用公式/index.html">
 <meta property="og:site_name" content="XeLaTeX">
 <meta property="og:description" content="记录一些常考易忘的公式，以及一些心得。">
-<meta property="og:updated_time" content="2015-11-01T09:00:07.000Z">
+<meta property="og:updated_time" content="2015-11-06T14:12:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="信号与系统常用公式">
 <meta name="twitter:description" content="记录一些常考易忘的公式，以及一些心得。">
@@ -272,6 +272,14 @@
 &amp;= \mathrm{e}^{-j3\theta/2}\times\frac{\frac{\mathrm{e}^{j2\theta}
 -\mathrm{e}^{-j2\theta}}{2}}{\frac{\mathrm{e}^{j\theta/2}-\mathrm{e}^{-j\theta/2}}{2}} \\
 &amp;= \mathrm{e}^{-j3\theta/2}\frac{\sin2\theta}{\sin(\theta/2)}
+\end{align}$$</span><!-- Has MathJax -->
+<h3 id="全通函数频率响应的化简">全通函数频率响应的化简</h3><span>$$\begin{align}
+H(z)&amp;=\frac{z-a}{z-1/a}\\
+\lvert H(\mathrm{e}^{j\theta})\rvert &amp;= \biggl\lvert\frac{\mathrm{e}^{j\theta}-a}{\mathrm{e}^{j\theta}-1/a}\biggr\rvert=
+\sqrt{\frac{(\cos\theta-a)^2+\sin^2\theta}{(\cos\theta-1/a)^2+\sin^2\theta}}\\
+&amp;=\sqrt{\frac{\cos^2\theta-2a\cos\theta+a^2+\sin^2\theta}{\cos^2\theta-2a^{-1}\cos\theta+a^{-2}+\sin^2\theta}}=\frac{1+a^2-2a\cos\theta}{1+a^{-2}-2a^{-1}\cos\theta}\\
+&amp;=a^2\times\frac{1+a^2-2a\cos\theta}{a^2+1-2a\cos\theta} \\
+&amp;=a^2
 \end{align}$$</span><!-- Has MathJax -->
 <h2 id="拉氏变换">拉氏变换</h2><ul>
 <li>信号 <span>$\mathrm{e}^t\varepsilon(t)-\varepsilon(t+2)$</span><!-- Has MathJax -->对应的单边拉氏变换为 <span>$\frac{1}{s(s-1)}$</span><!-- Has MathJax --></li>
