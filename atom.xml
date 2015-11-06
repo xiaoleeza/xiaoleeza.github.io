@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://xiaoleeza.github.io/"/>
-  <updated>2015-11-06T14:12:10.000Z</updated>
+  <updated>2015-11-06T15:17:28.000Z</updated>
   <id>http://xiaoleeza.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://xiaoleeza.github.io/2015/10/29/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F/"/>
     <id>http://xiaoleeza.github.io/2015/10/29/信号与系统常用公式/</id>
     <published>2015-10-29T10:26:08.000Z</published>
-    <updated>2015-11-06T14:12:10.000Z</updated>
+    <updated>2015-11-06T15:17:28.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>记录一些常考易忘的公式，以及一些心得。</p>
 </blockquote>
@@ -52,10 +52,12 @@
 &amp;= \mathrm{e}^{-j3\theta/2}\frac{\sin2\theta}{\sin(\theta/2)}
 \end{align}$$</span><!-- Has MathJax -->
 <h3 id="全通函数频率响应的化简">全通函数频率响应的化简</h3><span>$$\begin{align}
-H(z)&amp;=\frac{z-a}{z-1/a}\\
-\lvert H(\mathrm{e}^{j\theta})\rvert &amp;= \biggl\lvert\frac{\mathrm{e}^{j\theta}-a}{\mathrm{e}^{j\theta}-1/a}\biggr\rvert=
+&amp;H(z)=\frac{z-a}{z-1/a}\\
+&amp;\lvert H(\mathrm{e}^{j\theta})\rvert = \biggl\lvert\frac{\mathrm{e}^{j\theta}-a}{\mathrm{e}^{j\theta}-1/a}\biggr\rvert\\
+&amp;=
 \sqrt{\frac{(\cos\theta-a)^2+\sin^2\theta}{(\cos\theta-1/a)^2+\sin^2\theta}}\\
-&amp;=\sqrt{\frac{\cos^2\theta-2a\cos\theta+a^2+\sin^2\theta}{\cos^2\theta-2a^{-1}\cos\theta+a^{-2}+\sin^2\theta}}=\frac{1+a^2-2a\cos\theta}{1+a^{-2}-2a^{-1}\cos\theta}\\
+&amp;=\sqrt{\frac{\cos^2\theta-2a\cos\theta+a^2+\sin^2\theta}{\cos^2\theta-2a^{-1}\cos\theta+a^{-2}+\sin^2\theta}}\\
+&amp;=\frac{1+a^2-2a\cos\theta}{1+a^{-2}-2a^{-1}\cos\theta}\\
 &amp;=a^2\times\frac{1+a^2-2a\cos\theta}{a^2+1-2a\cos\theta} \\
 &amp;=a^2
 \end{align}$$</span><!-- Has MathJax -->
