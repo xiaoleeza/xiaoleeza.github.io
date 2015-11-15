@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://xiaoleeza.github.io/2015/10/29/信号与系统常用公式/index.html">
 <meta property="og:site_name" content="XeLaTeX">
 <meta property="og:description" content="记录一些常考易忘的公式，以及一些心得。">
-<meta property="og:updated_time" content="2015-11-06T15:17:32.000Z">
+<meta property="og:updated_time" content="2015-11-15T15:05:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="信号与系统常用公式">
 <meta name="twitter:description" content="记录一些常考易忘的公式，以及一些心得。">
@@ -285,6 +285,13 @@
 \end{align}$$</span><!-- Has MathJax -->
 <h2 id="拉氏变换">拉氏变换</h2><ul>
 <li>信号 <span>$\mathrm{e}^t\varepsilon(t)-\varepsilon(t+2)$</span><!-- Has MathJax -->对应的单边拉氏变换为 <span>$\frac{1}{s(s-1)}$</span><!-- Has MathJax --></li>
+<li><span>$$\left\{
+\begin{aligned} 
+&amp;sY(s)-y(0_-) \\
+&amp;s^2Y(s)-sy(0_-)-y&apos;(0_-)
+\end{aligned} 
+\right.$$</span><!-- Has MathJax -->
+</li>
 </ul>
 <blockquote>
 <p>求单边拉氏变换时 <span>$\varepsilon(t+2)$</span><!-- Has MathJax --> 等价于 <span>$\varepsilon(t)$</span><!-- Has MathJax --></p>
@@ -292,6 +299,12 @@
 <h2 id="Z变换">Z变换</h2><ul>
 <li>只有当 <span>$H(z)$</span><!-- Has MathJax --> 的收敛域包含单位圆时频响 <span>$H(\mathrm{e}^{j\theta})$</span><!-- Has MathJax --> 才存在。</li>
 <li><span>$\frac{z}{(z-a)^{m+1}}\leftrightarrow \mathrm{C}^m_ka^{k-m}\varepsilon(k)$</span><!-- Has MathJax --></li>
+<li><span>$$\left\{
+\begin{aligned} 
+&amp;z^{-1}Y(z)+f(-1)  \\ 
+&amp;z^{-2}Y(z)+z^{-1}f(-1)+f(-2)
+\end{aligned} 
+\right.$$</span><!-- Has MathJax --></li>
 </ul>
 
       
